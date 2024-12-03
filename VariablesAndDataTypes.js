@@ -31,3 +31,29 @@ const c = 30;
 const player = { name: "Lewis" };
 player.name = "Max";
 console.log(player);
+
+// data types
+
+// Primitive
+let text = "Hello, world!"; // String
+let number = 42; // Number
+let isActive = true; // Boolean
+let notDefined; // Undefined
+let emptyValue = null; // Null
+
+console.log(text);
+console.log(number);
+console.log(isActive);
+console.log(notDefined);
+console.log(emptyValue);
+
+// Non-Primitive
+let array = [1, 2, 3]; // Array (Object type)
+let person = {
+  // Object
+  firstName: "Jane",
+  lastName: "Doe",
+};
+
+console.log(array);
+console.log(person);
