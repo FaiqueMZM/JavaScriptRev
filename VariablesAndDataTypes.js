@@ -16,7 +16,7 @@ console.log(a);
 // block scoped, only accessible within the block
 // cannot be re-declared in the same scope but can be updated
 
-// console.log(b); // ReferenceError, cannot access 'b' before initialization
+// console.log(b);  ReferenceError, cannot access 'b' before initialization
 let b = 20;
 console.log(b);
 
@@ -26,7 +26,7 @@ console.log(b);
 // reference cannot be changed but the content of the array or object can be modified
 
 const c = 30;
-// c = 40; // TyoeError, assignment to constant variable
+// c = 40;  TyoeError, assignment to constant variable
 
 const player = { name: "Lewis" };
 player.name = "Max";
