@@ -1,3 +1,6 @@
+// variables and data types
+console.log("Variables and data types");
+
 // three ways to declare variables
 // 1. var
 // 2. let
