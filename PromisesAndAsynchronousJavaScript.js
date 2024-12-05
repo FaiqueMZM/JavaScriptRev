@@ -69,3 +69,22 @@ Promise.race([promise1, promise2]).then((result) => console.log(result));
 // Output: "One" (whichever resolves first)
 
 // fetch api
+
+// using fetch to make http requests
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.log("Error:", error));
+
+// using async/await with fetch
+async function getPosts() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const posts = await response.json();
+    console.log(posts);
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+getPosts();
