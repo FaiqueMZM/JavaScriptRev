@@ -1,5 +1,5 @@
 // functions
-console.log("Funcitons");
+console.log("Functions");
 
 // function declarations
 function greet(name) {
