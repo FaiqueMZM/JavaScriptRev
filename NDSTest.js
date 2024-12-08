@@ -1,6 +1,7 @@
 // nested data structure
 console.log("Nested Data Structure");
 
+// sum of nested array
 function sumNestedArr(arr) {
   return arr.reduce((sum, element) => {
     if (Array.isArray(element)) {
@@ -10,6 +11,7 @@ function sumNestedArr(arr) {
   }, 0);
 }
 
+// flat the nested array to a flat array
 function flattenNestedArr(arr) {
   return arr.reduce((flat, element) => {
     if (Array.isArray(element)) {
@@ -25,6 +27,7 @@ console.log(sumNestedArr(nestedArray));
 
 console.log(flattenNestedArr(nestedArray));
 
+// find value in a object
 function findValue(obj, value) {
   for (const key in obj) {
     if (key === value) {
