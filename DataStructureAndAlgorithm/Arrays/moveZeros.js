@@ -31,3 +31,25 @@ function moveZeros(arr) {
 }
 
 console.log(moveZeros([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
+
+// using loops
+function moveZeros(arr) {
+    let result = [];
+    let zeroCount = 0;
+
+    for (let num of arr) {
+        if (num === 0) {
+            zeroCount++;
+        } else {
+            result.push(num);
+        }
+    }
+
+    while (zeroCount--) {
+        result.push(0);
+    }
+
+    return result;
+}
+
+console.log(moveZeros([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
