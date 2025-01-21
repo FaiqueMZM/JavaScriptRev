@@ -17,3 +17,12 @@ function missingNum(arr, n) {
 }
 
 console.log(missingNum([1, 2, 4, 5, 6], 6)); // Output: 3
+
+// using mathematical formula
+function missingNum(arr, n) {
+    let expectedSum = (n * (n + 1)) / 2;
+    let actualSum = arr.reduce((a, b) => a + b, 0);
+    return expectedSum - actualSum;
+}
+
+console.log(missingNum([1, 2, 4, 5, 6], 6)); // Output: 3
