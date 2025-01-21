@@ -9,3 +9,11 @@ function missingNum(arr, n) {
 }
 
 console.log(missingNum([1, 2, 4, 5, 6], 6)); // Output: 3
+
+// using built-in functions
+function missingNum(arr, n) {
+    let sum = arr.reduce((a, b) => a + b);
+    return (n * (n + 1)) / 2 - sum;
+}
+
+console.log(missingNum([1, 2, 4, 5, 6], 6)); // Output: 3
