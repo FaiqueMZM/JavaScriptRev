@@ -14,3 +14,20 @@ function moveZeros(arr) {
 }
 
 console.log(moveZeros([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
+
+function moveZeros(arr) {
+    let result = [];
+    let count = 0;
+
+    for (let i in arr) {
+        if (arr[i] !== 0) {
+            result[count++] = arr[i];
+        }
+    }
+    while (count < arr.length) {
+        result[count++] = 0;
+    }
+    return result;
+}
+
+console.log(moveZeros([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
