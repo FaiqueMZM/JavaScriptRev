@@ -17,3 +17,21 @@ function firstNonReapeatingElement(arr) {
 
 console.log(firstNonReapeatingElement([9, 2, 3, 2, 3, 4, 5])); // Output: 9
 console.log(firstNonReapeatingElement([3 , 3, 1, 2, 3, 4, 5])); // Output: 1
+
+// using built-in functions
+
+function firstNonReapeatingElement(arr) {
+    let count = new Map();
+    for (let num of arr) {
+        count.set(num, (count.get(num) || 0) + 1);
+    }
+    for (let num of arr) {
+        if (count.get(num) === 1) {
+            return num;
+        }
+    }
+    return -1;
+}
+
+console.log(firstNonReapeatingElement([9, 2, 3, 2, 3, 4, 5])); // Output: 9
+console.log(firstNonReapeatingElement([3 , 3, 1, 2, 3, 4, 5])); // Output: 1
