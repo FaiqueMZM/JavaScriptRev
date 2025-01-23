@@ -20,18 +20,19 @@ console.log(firstNonReapeatingElement([3 , 3, 1, 2, 3, 4, 5])); // Output: 1
 
 // using built-in functions
 
-function firstNonReapeatingElement(arr) {
-    let count = new Map();
+function firstNonRepeating(arr) {
+    let count = {};
+  
     for (let num of arr) {
-        count.set(num, (count.get(num) || 0) + 1);
+      count[num] = (count[num] || 0) + 1;
     }
+  
     for (let num of arr) {
-        if (count.get(num) === 1) {
-            return num;
-        }
+      if (count[num] === 1) return num;
     }
-    return -1;
-}
+  
+    return null;
+  }
 
 console.log(firstNonReapeatingElement([9, 2, 3, 2, 3, 4, 5])); // Output: 9
 console.log(firstNonReapeatingElement([3 , 3, 1, 2, 3, 4, 5])); // Output: 1
