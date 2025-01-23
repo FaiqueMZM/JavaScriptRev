@@ -19,3 +19,11 @@ function mergeSortedArrays(arr1, arr2) {
 }
 
 console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
+
+// uisng built-in functions
+
+function mergeSortedArrays(arr1, arr2) {
+    return [...arr1, ...arr2].sort((a, b) => a - b);
+}
+
+console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
