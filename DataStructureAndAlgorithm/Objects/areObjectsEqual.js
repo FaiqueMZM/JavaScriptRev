@@ -19,3 +19,12 @@ function areObjectsEqual(object1, object2) {
 
 console.log(areObjectsEqual({ a: 1, b: 2 }, { a: 1, b: 2 })); // Output: true
 console.log(areObjectsEqual({ a: 1, b: 2 }, { a: 1, b: 3 })); // Output: false
+
+// using built-in functions
+
+function areObjectsEqual(object1, object2) {
+    return JSON.stringify(object1) === JSON.stringify(object2);
+}
+
+console.log(areObjectsEqual({ a: 1, b: 2 }, { a: 1, b: 2 })); // Output: true
+console.log(areObjectsEqual({ a: 1, b: 2 }, { a: 1, b: 3 })); // Output: false
