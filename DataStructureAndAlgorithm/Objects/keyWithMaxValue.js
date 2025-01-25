@@ -16,3 +16,14 @@ function keyWithMaxValue(obj) {
 
 console.log(keyWithMaxValue({ a: 5, b: 12, c: 8 })); // Output: "b"
 console.log(keyWithMaxValue({ a: 5, z: 12 })); // Output: "z"
+
+// using built-in functions
+
+function keyWithMaxValue(obj) {
+    return Object.keys(obj).reduce((maxKey, key) =>
+        obj[key] > obj[maxKey] ? key : maxKey
+    );
+}
+
+console.log(keyWithMaxValue({ a: 5, b: 12, c: 8 })); // Output: "b"
+console.log(keyWithMaxValue({ a: 5, z: 12 })); // Output: "z"
