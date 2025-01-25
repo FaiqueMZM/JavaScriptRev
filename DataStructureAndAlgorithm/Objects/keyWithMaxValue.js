@@ -26,4 +26,4 @@ function keyWithMaxValue(obj) {
 }
 
 console.log(keyWithMaxValue({ a: 5, b: 12, c: 8 })); // Output: "b"
-console.log(keyWithMaxValue({ a: 5, z: 12 })); // Output: "z"
+console.log(keyWithMaxValue({ c: 15, a: 15 })); // Output: "c"
