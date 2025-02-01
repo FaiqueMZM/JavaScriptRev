@@ -17,3 +17,10 @@ function reverseString(str) {
   
   console.log(reverseString("hello")); // Output: "olleh"
   
+  // using built-in functions
+
+  function reverseString(str) {
+    return str.split("").reverse().join("");
+  }
+  
+  console.log(reverseString("hello")); // Output: "olleh"
