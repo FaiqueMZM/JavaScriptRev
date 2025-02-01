@@ -24,3 +24,13 @@ function reverseString(str) {
   }
   
   console.log(reverseString("hello")); // Output: "olleh"
+
+// reverse a string using recursion
+
+function reverseString(str) {
+    if (str.length === 0) {
+      return "";
+    } else {
+      return reverseString(str.substr(1)) + str.charAt(0);
+    }
+  }
