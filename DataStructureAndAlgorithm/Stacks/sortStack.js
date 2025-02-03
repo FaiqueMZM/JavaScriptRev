@@ -17,3 +17,11 @@ function sortStack(stack) {
 }
 
 console.log(sortStack([34, 3, 31, 98, 92, 23])); // Output: [3, 23, 31, 34, 92, 98]
+
+// using built-in functions
+
+function sortStack(stack) {
+    return stack.sort((a, b) => a - b);
+}
+
+console.log(sortStack([34, 3, 31, 98, 92, 23]));
