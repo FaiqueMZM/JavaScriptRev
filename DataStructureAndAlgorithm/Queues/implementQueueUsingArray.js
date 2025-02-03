@@ -28,10 +28,10 @@ class Queue {
   }
   
   let queue = new Queue();
-  queue.enqueue(10);
-  queue.enqueue(20);
-  queue.enqueue(30);
-  console.log(queue.dequeue()); // Output: 10
-  console.log(queue.front());   // Output: 20
-  console.log(queue.size());    // Output: 2
+  queue.enqueue(1);
+  queue.enqueue(2);
+  queue.enqueue(3);
+  console.log(queue.dequeue()); 
+  console.log(queue.front());   
+  console.log(queue.size());    
   
